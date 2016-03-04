@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">AndroidUISessions</string>
+    <string name="linear_layout_desc">
+        • Arrange Views in rows or columns\n
+        • By default orientation is horizontal\n
+        • Specify the orientation using android:orientation
+    </string>
+    <string name="table_layout_desc">
+        • Arrange the Views in tabular format\n
+        • Rows are defined with TableRow layout\n
+        • Each view/viewGroup in TableRow acts as column\n
+        • No. of columns in a table will be defined by the row having most no. of columns\n
+        • Width of a column is defined by the row with the widest cell/column
+    </string>
+    <string name="relative_layout_desc">• Arrange Views relative to each other or its parent</string>
+    <string name="frame_layout_desc">
+        • Used to block an area on the screen for a single item\n
+        • By default each view is place in the top left corner of the layout\n
+        • It can have multiple items and you can arrange them with margin or gravity
+    </string>
+    <string name="scroll_layout_desc">
+        • Used to make the views scrollable\n
+        • Only supports vertical scrolling\n
+        • Never use ListView inside ScrollView\n
+    </string>
+    <string name="sp_desc">• Use SP only for fonts, as it takes user preference into consideration</string>
+
+    <array name="dummy_list">
+        <item>Hello1</item>
+        <item>Hello2</item>
+        <item>Hello3</item>
+        <item>Hello4</item>
+        <item>Hello5</item>
+        <item>Hello6</item>
+        <item>Hello7</item>
+        <item>Hello8</item>
+        <item>Hello9</item>
+        <item>Hello10</item>
+    </array>
+</resources>

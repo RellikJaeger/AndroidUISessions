@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/description"
+        android:text="@string/relative_layout_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/desc1"
+            style="@style/description"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:text="android:layout_toRightOf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/exmp1"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text1"
+                style="@style/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text1"/>
+
+            <TextView
+                style="@style/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text1"
+                android:text="Text2"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_below="@id/exmp1"
+            android:id="@+id/desc2"
+            style="@style/description"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:text="android:layout_toLeftOf/android:layout_alignParentRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/desc2"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_alignParentRight="true"
+                style="@style/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text2"/>
+
+            <TextView
+                style="@style/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/text2"
+                android:text="Text3"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

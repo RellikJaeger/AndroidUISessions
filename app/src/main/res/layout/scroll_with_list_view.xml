@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fillViewport="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <ListView
+                android:id="@+id/list_view"
+                android:entries="@array/dummy_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:textSize="100dp"
+                android:background="@color/colorPrimary"
+                android:text="View 1"
+                android:textColor="@color/primary_dark_material_dark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:textSize="100dp"
+                android:background="@color/colorAccent"
+                android:text="View 2"
+                android:textColor="@color/primary_dark_material_dark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:textSize="100dp"
+                android:background="@color/colorPrimary"
+                android:text="View 3"
+                android:textColor="@color/primary_dark_material_dark"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

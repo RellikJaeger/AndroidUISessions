@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:background="@color/highlighted_text_material_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingLeft="40dp"
+        android:text="paddingLeft"
+        android:layout_margin="10dp"
+        android:textColor="@color/accent_material_dark"/>
+
+    <TextView
+        android:background="@color/highlighted_text_material_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingRight="40dp"
+        android:text="paddingRight"
+        android:layout_margin="10dp"
+        android:textColor="@color/accent_material_dark"/>
+
+    <TextView
+        android:background="@color/highlighted_text_material_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:text="paddingTop"
+        android:layout_margin="10dp"
+        android:textColor="@color/accent_material_dark"/>
+
+    <TextView
+        android:background="@color/highlighted_text_material_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingBottom="20dp"
+        android:text="paddingBottom"
+        android:layout_margin="10dp"
+        android:textColor="@color/accent_material_dark"/>
+
+    <TextView
+        android:background="@color/highlighted_text_material_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:text="padding"
+        android:layout_margin="10dp"
+        android:textColor="@color/accent_material_dark"/>
+</LinearLayout>
