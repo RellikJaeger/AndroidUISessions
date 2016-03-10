@@ -9,19 +9,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="ajitsingh.com.androiduisessions.MainActivity">
+    tools:context=".session2.Session2">
 
     <Button
         style="@style/button"
-        android:text="Session 1"
-        android:onClick="startSession1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        style="@style/button"
-        android:text="Session 2"
-        android:onClick="startSession2"
+        android:text="Pull To Refresh"
+        android:onClick="pullToRefresh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </LinearLayout>

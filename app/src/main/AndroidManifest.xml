@@ -23,5 +23,8 @@
         <activity android:name=".session1.basic_layouts.ScrollViewDemo"/>
         <activity android:name=".session1.basic_layouts.ScrollViewWithListView"/>
         <activity android:name=".session1.PaddingVsMargin"/>
+
+        <activity android:name=".session2.Session2"/>
+        <activity android:name=".session2.PullToRefresh"/>
     </application>
 </manifest>
