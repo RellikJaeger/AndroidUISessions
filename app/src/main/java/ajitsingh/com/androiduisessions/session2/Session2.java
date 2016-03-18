@@ -24,4 +24,9 @@ public class Session2 extends AppCompatActivity {
   public void floatingButton(View view) {
     Demo.start(this, R.layout.floating_button);
   }
+
+  public void dragAndDrop(View view) {
+    Intent intent = new Intent(this, DragAndDrop.class);
+    startActivity(intent);
+  }
 }
