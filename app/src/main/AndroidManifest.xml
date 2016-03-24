@@ -27,5 +27,6 @@
         <activity android:name=".session2.Session2"/>
         <activity android:name=".session2.PullToRefresh"/>
         <activity android:name=".session2.DragAndDrop"/>
+        <activity android:name=".session2.DraggableView"/>
     </application>
 </manifest>

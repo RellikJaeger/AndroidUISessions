@@ -29,4 +29,9 @@ public class Session2 extends AppCompatActivity {
     Intent intent = new Intent(this, DragAndDrop.class);
     startActivity(intent);
   }
+
+  public void draggableView(View view) {
+    Intent intent = new Intent(this, DraggableView.class);
+    startActivity(intent);
+  }
 }
