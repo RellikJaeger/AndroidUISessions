@@ -5,23 +5,26 @@ import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import ajitsingh.com.androiduisessions.R;
 
 public class PullToRefresh extends AppCompatActivity {
 
+  private SwipeRefreshLayout swipeToRefreshContainer;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.pull_to_refresh);
     final TextView textView = (TextView) PullToRefresh.this.findViewById(R.id.swipe_text);
-    final SwipeRefreshLayout swipeToRefreshContainer = (SwipeRefreshLayout) findViewById(R.id.swip_refresh_layout);
+    swipeToRefreshContainer = (SwipeRefreshLayout) findViewById(R.id.swip_refresh_layout);
 
     swipeToRefreshContainer.setColorScheme(
       R.color.colorAccent,
       R.color.link_text_material_light,
-      R.color.primary_dark_material_light
+      R.color.colorPrimary
     );
 
     swipeToRefreshContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -37,5 +40,19 @@ public class PullToRefresh extends AppCompatActivity {
         }, 5000L);
       }
     });
+  }
+
+  public void refresh(View view) {
+    final Button button = (Button) view;
+    button.setText("Refreshing...");
+    swipeToRefreshContainer.setRefreshing(true);
+
+    new Handler().postDelayed(new Runnable() {
+      @Override
+      public void run() {
+        swipeToRefreshContainer.setRefreshing(false);
+        button.setText("Refresh");
+      }
+    }, 5000L);
   }
 }
