@@ -34,4 +34,9 @@ public class Session2 extends AppCompatActivity {
     Intent intent = new Intent(this, DraggableView.class);
     startActivity(intent);
   }
+
+  public void stickyHeader(View view) {
+    Intent intent = new Intent(this, StickyHeader.class);
+    startActivity(intent);
+  }
 }

@@ -37,4 +37,19 @@
         <item>Hello9</item>
         <item>Hello10</item>
     </array>
+
+    <array name="android_versions">
+        <item>CupCake</item>
+        <item>Donut</item>
+        <item>Eclair</item>
+        <item>Froyo</item>
+        <item>Gingerbread</item>
+        <item>Honeycomb</item>
+        <item>Ice Cream Sandwich</item>
+        <item>Jellybean</item>
+        <item>KitKat</item>
+        <item>Lollipop</item>
+        <item>Marshmallow</item>
+        <item>Android N</item>
+    </array>
 </resources>
