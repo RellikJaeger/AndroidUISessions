@@ -13,10 +13,15 @@
 
 - Pull To Refresh
 - Floating Button
+- Drag And Drop
+- Draggable View
+- Sticky Header
 
-##Few ScreenShots Of The Sessions
+##ScreenShots
 
 ![Alt text](https://github.com/ajitsing/ScreenShots/blob/master/android_sessions/home_page.png)
+
+###Session 1
 
 ![Alt text](https://github.com/ajitsing/ScreenShots/blob/master/android_sessions/session1.png)
 
@@ -27,3 +32,12 @@
 ![Alt text](https://github.com/ajitsing/ScreenShots/blob/master/android_sessions/layout_weight.png)
 
 ![Alt text](https://github.com/ajitsing/ScreenShots/blob/master/android_sessions/padding_tutorial.png)
+
+
+###Session 2
+
+![Alt text](https://github.com/ajitsing/ScreenShots/blob/master/android_sessions/session2.png)
+
+![Alt text](https://github.com/ajitsing/ScreenShots/blob/master/android_sessions/pull_to_refresh.png)
+
+![Alt text](https://github.com/ajitsing/ScreenShots/blob/master/android_sessions/sticky_header.png)
