@@ -39,4 +39,9 @@ public class Session2 extends AppCompatActivity {
     Intent intent = new Intent(this, StickyHeader.class);
     startActivity(intent);
   }
+
+  public void customAnimation(View view) {
+    Intent intent = new Intent(this, CustomAnimation.class);
+    startActivity(intent);
+  }
 }
