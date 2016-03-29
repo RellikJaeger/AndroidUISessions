@@ -35,9 +35,9 @@ public class DragAndDrop extends AppCompatActivity {
         int action = event.getAction();
         switch (action) {
           case DragEvent.ACTION_DROP:
-            TextView target = (TextView) v;
-            TextView newTextView = (TextView) event.getLocalState();
-            target.setText("Drag Complete: " + newTextView.getText());
+            TextView targetTextView = (TextView) v;
+            TextView droppedTextView = (TextView) event.getLocalState();
+            targetTextView.setText("Drag Complete: " + droppedTextView.getText());
             return true;
         }
 
