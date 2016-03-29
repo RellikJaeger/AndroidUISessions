@@ -18,13 +18,13 @@ public class PullToRefresh extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.pull_to_refresh);
-    final TextView textView = (TextView) PullToRefresh.this.findViewById(R.id.swipe_text);
+    final TextView textView = (TextView) findViewById(R.id.swipe_text);
     swipeToRefreshContainer = (SwipeRefreshLayout) findViewById(R.id.swip_refresh_layout);
 
-    swipeToRefreshContainer.setColorScheme(
-      R.color.colorAccent,
-      R.color.link_text_material_light,
-      R.color.colorPrimary
+    swipeToRefreshContainer.setColorSchemeResources(
+        R.color.colorAccent,
+        R.color.link_text_material_light,
+        R.color.colorPrimary
     );
 
     swipeToRefreshContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
