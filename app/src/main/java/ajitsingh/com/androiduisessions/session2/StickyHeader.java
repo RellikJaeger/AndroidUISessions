@@ -45,9 +45,9 @@ public class StickyHeader extends AppCompatActivity implements AbsListView.OnScr
     if (listView.getFirstVisiblePosition() == 0) {
       View firstChild = listView.getChildAt(0);
       if (firstChild != null) {
-        float topY = firstChild.getTop();
-        image.setY(topY * 0.5f);
-        heading.setY(Math.max(0, headingPlaceholder.getTop() + topY));
+        float listViewHeadersTopY = firstChild.getTop();
+        image.setY(listViewHeadersTopY * 0.5f);
+        heading.setY(Math.max(0, headingPlaceholder.getTop() + listViewHeadersTopY));
       }
     }
   }

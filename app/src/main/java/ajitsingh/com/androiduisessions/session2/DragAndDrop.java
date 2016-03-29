@@ -25,7 +25,7 @@ public class DragAndDrop extends AppCompatActivity {
       @Override
       public boolean onLongClick(View v) {
         v.startDrag(ClipData.newPlainText("Drag Label", "Drag Text"), new DragShadow(v), v, 0);
-        return false;
+        return true;
       }
     });
 
