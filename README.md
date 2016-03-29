@@ -16,6 +16,11 @@
 - Drag And Drop
 - Draggable View
 - Sticky Header
+- Custom Animation
+  - scale
+  - translate
+  - alhpa
+  - rotate
 
 ##ScreenShots
 
