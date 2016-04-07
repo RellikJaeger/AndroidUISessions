@@ -52,4 +52,11 @@
         android:onClick="customAnimation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <Button
+        style="@style/button"
+        android:text="Activity Transition"
+        android:onClick="activityTransition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

@@ -44,4 +44,9 @@ public class Session2 extends AppCompatActivity {
     Intent intent = new Intent(this, CustomAnimation.class);
     startActivity(intent);
   }
+
+  public void activityTransition(View view) {
+    Intent intent = new Intent(this, ActivityTransition.class);
+    startActivity(intent);
+  }
 }

@@ -30,5 +30,7 @@
         <activity android:name=".session2.DraggableView"/>
         <activity android:name=".session2.StickyHeader"/>
         <activity android:name=".session2.CustomAnimation"/>
+        <activity android:name=".session2.ActivityTransition"/>
+        <activity android:name=".session2.DummyActivity"/>
     </application>
 </manifest>
