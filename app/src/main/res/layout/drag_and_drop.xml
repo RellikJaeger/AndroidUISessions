@@ -1,27 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:clickable="true"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+  android:clickable="true"
+  android:layout_height="match_parent"
+  android:layout_width="match_parent"
+  android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
-        style="@style/heading"
-        android:gravity="center_horizontal"
-        android:id="@+id/drag_text"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_width="match_parent"
-        android:text="Drag This"/>
-
+      style="@style/description"
+      android:gravity="center_horizontal"
+      android:id="@+id/drag_text1"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="50dp"
+      android:layout_width="match_parent"
+      android:text="Jenkins"/>
 
     <TextView
-        style="@style/heading"
-        android:gravity="center_horizontal"
-        android:id="@+id/drop_text"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_width="match_parent"
-        android:text="Drop Here"/>
+      style="@style/description"
+      android:gravity="center_horizontal"
+      android:id="@+id/drag_text2"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:text="Go"/>
+
+    <TextView
+      style="@style/description"
+      android:gravity="center_horizontal"
+      android:id="@+id/drag_text3"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:text="Team City"/>
+
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:orientation="horizontal">
+
+        <TextView
+          style="@style/heading"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="200dp"
+          android:gravity="center_horizontal"
+          android:text="Our project uses "/>
+
+        <TextView
+          android:id="@+id/drop_text"
+          style="@style/description"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="200dp"
+          android:gravity="center_horizontal"
+          android:text="_______"/>
+
+
+        <TextView
+          style="@style/heading"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="200dp"
+          android:gravity="center_horizontal"
+          android:text=" for CI."/>
+    </LinearLayout>
 </LinearLayout>

@@ -9,7 +9,11 @@ import android.view.DragEvent;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.List;
+
 import ajitsingh.com.androiduisessions.R;
+
+import static java.util.Arrays.asList;
 
 public class DragAndDrop extends AppCompatActivity {
 
@@ -18,16 +22,22 @@ public class DragAndDrop extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.drag_and_drop);
 
-    TextView dragView = (TextView) findViewById(R.id.drag_text);
+    final TextView dragView1 = (TextView) findViewById(R.id.drag_text1);
+    TextView dragView2 = (TextView) findViewById(R.id.drag_text2);
+    TextView dragView3 = (TextView) findViewById(R.id.drag_text3);
     TextView dropView = (TextView) findViewById(R.id.drop_text);
 
-    dragView.setOnLongClickListener(new View.OnLongClickListener() {
-      @Override
-      public boolean onLongClick(View v) {
-        v.startDrag(ClipData.newPlainText("Drag Label", "Drag Text"), new DragShadow(v), v, 0);
-        return true;
-      }
-    });
+    List<TextView> options = asList(dragView1, dragView2, dragView3);
+
+    for (final TextView option : options) {
+      option.setOnLongClickListener(new View.OnLongClickListener() {
+        @Override
+        public boolean onLongClick(View v) {
+          v.startDrag(ClipData.newPlainText("CI", option.getText()), new DragShadow(v), v, 0);
+          return true;
+        }
+      });
+    }
 
     dropView.setOnDragListener(new View.OnDragListener() {
       @Override
@@ -37,7 +47,9 @@ public class DragAndDrop extends AppCompatActivity {
           case DragEvent.ACTION_DROP:
             TextView targetTextView = (TextView) v;
             TextView droppedTextView = (TextView) event.getLocalState();
-            targetTextView.setText("Drag Complete: " + droppedTextView.getText());
+            droppedTextView.setEnabled(false);
+            droppedTextView.setTextColor(DragAndDrop.this.getResources().getColor(R.color.dim_foreground_disabled_material_dark));
+            targetTextView.setText(droppedTextView.getText());
             return true;
         }
 
