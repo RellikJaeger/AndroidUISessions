@@ -1,5 +1,10 @@
 # AndroidUISessions
 
+##Blogs
+ - http://www.singhajit.com/android-draggable-view/
+ - http://www.singhajit.com/android-custom-animations/
+ - http://www.singhajit.com/tutorial-1-android-ui-desgin-and-styling/ 
+
 ##Session 1
 
 - What the difference in DP, SP & Pixel and when to use what?
@@ -9,7 +14,7 @@
 - Layout Gravity
 - LayoutWeight
 
-##Session 2 (WIP..)
+##Session 2
 
 - Pull To Refresh
 - Floating Button
@@ -21,6 +26,8 @@
   - translate
   - alhpa
   - rotate
+- Activity Transition 
+  
 
 ##ScreenShots
 
