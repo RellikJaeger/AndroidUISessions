@@ -1,11 +1,13 @@
 # AndroidUISessions
 
-##Blogs
+[![Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/Ajit5ingh)
+
+## Blogs
  - http://www.singhajit.com/android-draggable-view/
  - http://www.singhajit.com/android-custom-animations/
  - http://www.singhajit.com/tutorial-1-android-ui-desgin-and-styling/ 
 
-##Session 1
+## Session 1
 
 - What the difference in DP, SP & Pixel and when to use what?
 - View and ViewGroup
@@ -14,7 +16,7 @@
 - Layout Gravity
 - LayoutWeight
 
-##Session 2
+## Session 2
 
 - Pull To Refresh
 - Floating Button
@@ -29,11 +31,11 @@
 - Activity Transition 
   
 
-##ScreenShots
+## ScreenShots
 
 ![Alt text](https://github.com/ajitsing/ScreenShots/blob/master/android_sessions/home_page.png)
 
-###Session 1
+### Session 1
 
 ![Alt text](https://github.com/ajitsing/ScreenShots/blob/master/android_sessions/session1.png)
 
@@ -46,7 +48,7 @@
 ![Alt text](https://github.com/ajitsing/ScreenShots/blob/master/android_sessions/padding_tutorial.png)
 
 
-###Session 2
+### Session 2
 
 ![Alt text](https://github.com/ajitsing/ScreenShots/blob/master/android_sessions/session2.png)
 
