@@ -1,6 +1,8 @@
 # AndroidUISessions
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/Ajit5ingh.svg?style=social)](https://twitter.com/Ajit5ingh)
+[![HitCount](http://hits.dwyl.io/ajitsing/AndroidUISessions.svg)](http://hits.dwyl.io/ajitsing/AndroidUISessions)
+
 
 ## Blogs
  - http://www.singhajit.com/android-draggable-view/
